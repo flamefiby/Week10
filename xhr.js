@@ -12,7 +12,7 @@ verseChoose.onchange = function() {
 
 function updateDisplay(verse) {
     verse = verse.replace(' ','');
-    verse = verse.toLocaleLowerCase();
+    verse = verse.toLowerCase();
     let url = verse + '.txt'
 
     let request = new XMLHttpRequest();
